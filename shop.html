@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>SOSO Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="siteTitle">SOSO Shop</h1>
+      <div class="header-actions">
+        <button id="styleBtn" class="btn small">Cambia stile</button>
+        <button id="themeBtn" class="btn small">Dark/Light</button>
+        <a href="index.html" class="btn small ghost">Esci</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="hero-image">
+        <img src="img/cannabis_ruderalis2.png" id="mainImg">
+      </div>
+      <div class="hero-text">
+        <h2>Prodotto di Punta: Sherbet Cake</h2>
+        <p>La Sherbet Cake (Ruderalis) dona un effetto energizzante e stimolante</p>
+      </div>
+    </div>
+
+    <div class="products">
+      <h3>Prodotti</h3>
+      <div class="grid">
+        <div class="category card">
+          <h4>Cannabis Indica</h4>
+          <div class="variants">
+            <div class="product">
+              <img src="img/cannabis_indica1.png">
+              <p>GSC Kush</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_indica2.png">
+              <p>Ripped Off Runtz</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_indica3.png">
+              <p>Rosé Slurricane</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category card">
+          <h4>Cannabis Sativa</h4>
+          <div class="variants">
+            <div class="product">
+              <img src="img/cannabis_sativa1.png" alt="Purple - Low">
+              <p>Citrus Tsunami</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_sativa2.png" alt="Purple - Mid">
+              <p>Jet Fuel Gelato</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_sativa3.png" alt="Purple - High">
+              <p>Purple Churro</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category card">
+          <h4>Cannabis Ruderalis</h4>
+          <div class="variants">
+            <div class="product">
+              <img src="img/cannabis_ruderalis1.png" alt="Red - Low">
+              <p>DurbanMaker</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_ruderalis2.png" alt="Red - Mid">
+              <p>Sherbet Cake</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+            <div class="product">
+              <img src="img/cannabis_ruderalis3.png" alt="Red - High">
+              <p>Peanut Butter Breath</p>
+              <button class="btn tiny">Compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact card">
+      <h3>Contattaci</h3>
+      <form id="contactForm" novalidate>
+        <label for="cname">Nome*</label>
+        <input type="text" id="cname" name="cname" required>
+
+        <label for="cemail">Email*</label>
+        <input type="email" id="cemail" name="cemail" required>
+
+        <label for="cmessage">Messaggio*</label>
+        <textarea id="cmessage" name="cmessage" rows="4" required></textarea>
+        <br>
+        <br>
+
+        <div class="form-actions">
+          <button type="submit" class="btn tiny">|  |   Invia   |  |</button>
+        </div>
+        <br>
+        
+      </form>
+
+      <div id="formFeedback" class="feedback" aria-live="polite"></div>
+      <br>
+
+      <div id="savedList" class="saved-list">
+        <h4>Messaggi salvati</h4>
+        <ul id="entries"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
